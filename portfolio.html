@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Portfólio - João da Silva</title>
+	<meta charset="UTF-8">
+	<link rel="icon" href="imagens\favicon.png"> <!--coloca icone no título da página-->
+		<link rel="stylesheet" href="CSS\reset.css">
+		<link rel="stylesheet" href="CSS\site.css">
+		<link rel="stylesheet" href="CSS\portfolio.css">
+		<!-- carrega a fonte Crimson Text nas versões normal, itálico e negrito -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
+		<!-- carrega a fonte Open Sans Condensed na versão negrito, -->
+		<!-- que é a única necessária para os cabeçalhos            -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+	</head>
+	
+	<body>
+		<main>
+			<h1 class="titulo-pagina">Portfólio</h1>
+			<div class="conteudo">
+				<p>Veja abaixo a lista dos meus projetos mais relevantes:</p>
+				<ul class="portfolio">
+					<li><a href="http://bmw.com">
+					<figure>
+					<img src="imagens/bmw.png" alt="Site da BMW">
+					<figcaption>BMW.com: reformulação de design e implementação de HTML, CSS e JavaScript</figcaption>
+					</figure></a>
+					</li>
+					
+					<li><a href="http://uol.com.br">
+					<figure>
+					<img src="imagens/uol.png" alt="Site da Uol">
+					<figcaption>Uol.com.br: reformulação de design e implementação de HTML, CSS e JavaScript</figcaption>
+					</figure></a>
+					</li>
+					
+					<li><a href="http://ibm.com">
+					<figure>
+					<img src="imagens/ibm.png" alt="Site da IBM">
+					<figcaption>IBM.com: aplicação de progressive enhancement em conjunto com aplicação back-end</figcaption>
+					</figure></a>
+					</li>
+					
+					<li><a href="http://g1.globo.com">
+					<figure>
+					<img src="imagens/g1.png" alt="Site do G1">
+					<figcaption>G1.globo.com: reformulação de design e implementação de HTML, CSS e JavaScript</figcaption>
+					</figure></a>
+					</li>
+					
+					<li><a href="http://terra.com.br">
+					<figure>
+					<img src="imagens/terra.png" alt="Site do Terra">
+					<figcaption>Terra.com.br: implementação de design responsivo</figcaption>
+					</figure></a>
+					</li>
+				</ul>
+			</div>
+		</main>
+		<img class="minha-foto" src="imagens\eu.jpg" alt="Foto do João da Silva">
+		<aside class="navegacao-site"> <!-- complemento do conteúdo principal-->
+			<h1>João da Silva</h1>
+			<nav> <!-- área de menu/links com semântica -->
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="portfolio.html">Portfólio</a></li>
+					<li><a href="bio.html">Sobre mim</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		<ul class="icones-sociais">
+			<li><a class="github" data-tooltip="Veja meus projetos opensource" href="http://github.com/joaodasilva">Github</a></li>
+			<li><a class="twitter" data-tooltip="Siga-me no Twitter" href="http://twitter.com/joaodasilva">Twitter</a></li>
+			<li><a data-tooltip="Veja meu currículo" class="linkedin" href="https://br.linkedin.com/pub/joão-da-silva/32/4/508">LinkedIn</a></li>
+		</ul>
+		</aside>
+		<footer class="rodape"> <!-- para rodapé -->
+			&copy; João da Silva 2014
+		</footer>
+	</body>
+</html>

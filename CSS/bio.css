@@ -1,0 +1,176 @@
+h1{
+	animation: aparece 2s ease-out;
+	-webkit-animation: aparece 2s ease-out;
+}
+
+@keyframes aparece {
+	0% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+
+@-webkit-keyframes aparece {
+	0% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+
+blockquote{
+	background-color:#D9E5E3;
+	border: .5em solid #C2CCCA;
+	width:30ch;
+	box-sizing:border-box; /*para a largura ser medida a partir da borda*/
+	padding:1em;
+	margin: 1em 2em;
+	transition: transform 1s linear, box-shadow 1s ease-in-out; /*transformação gradual dos elementos*/
+	transition-delay:0s, 1s; /*tempo para começar a transformação*/
+	position: relative;
+	animation: quica 1s infinite;
+	-webkit-animation: quica 1s infinite;
+	animation-direction: alternate;
+	-webkit-animation-direction: alternate;
+	animation-timing-function: ease-in;
+	-webkit-animation-timing-function: ease-in;
+}
+
+@keyframes quica {
+	from {
+		top: 0;
+	}
+	90% {
+		transform: rotate(-2deg);
+	}
+	95% {
+		transform: rotate(2deg);
+	}
+	to {
+		top: 1em;
+	}
+}
+
+@-webkit-keyframes quica {
+	from {
+		top: 0;
+	}
+	90%{
+		transform: rotate(-2deg);
+	}
+	95% {
+		transform: rotate(2deg);
+	}
+	to {
+		top: 1em;
+	}
+}
+/*.fiat{
+	float:right;
+	margin:20px 0px 20px 20px; /top, right, bottom, left/
+	}
+	
+	.petrobras{
+	float:left;
+	margin:20px 20px 20px 0;
+}*/
+
+cite{
+	font-style:italic;
+	float:right;
+}
+
+blockquote:nth-of-type(odd){
+	float:right;
+	margin:20px 0px 20px 20px;
+}
+
+blockquote:nth-of-type(even){
+	float:left;
+	margin:20px 20px 20px 0;
+}
+
+blockquote:nth-of-type(odd):hover,
+blockquote:nth-of-type(odd):focus{
+	transform:translate(0, 0) rotate(10deg) scale(1.20);
+	box-shadow: 0px 0px 0px 9999px rgba(0,0,0,0.60);
+	animation-play-state: paused;
+	-webkit-animation-play-state: paused;
+}
+
+blockquote:nth-of-type(even):hover,
+blockquote:nth-of-type(even):focus{
+	transform:translate(0, 0) rotate(-10deg) scale(1.20);
+	box-shadow: 0px 0px 0px 9999px rgba(0,0,0,0.60);
+	animation-play-state: paused;
+	-webkit-animation-play-state: paused;
+}
+
+blockquote:before{
+	content:'“';
+	position:absolute;
+	font-size:10em;
+	color:#bbb;
+	line-height:.8;
+}
+
+blockquote > p{
+	position:relative;
+}
+
+.conteudo > p:first-letter{
+	font-size:200%;
+	color:#3C1D3D;
+	font-weight:bold;
+	text-shadow:1.5px 1px #000;
+	margin-right: .2ch;
+	line-height:1;
+}
+
+/*table{
+	border-collapse: separate; /*para separar as bordas da tabela/
+	border-spacing:5px;
+	}
+	th{
+	background-color: red;
+	border:5px solid black;
+	}
+	
+	td{
+	background-color: blue;
+	border:5px solid black;
+}*/
+
+.habilidades th{
+	background-color:#851944;
+	color:#fff;
+	font-weight:bold;
+}
+
+.habilidades thead th{ /* não precisamos colocar font-weight e color pois já fizemos isso para todos os th */
+	background-color:#3C1D3D;
+}
+
+.habilidades td{
+	background-color:#EEE;
+}
+
+.habilidades th,
+.habilidades td{
+	padding:1em;
+}
+
+.habilidades{
+	border-collapse:separate;
+	border-spacing:0.25em;
+	margin:1em 0; /*margin-top e margin-botton:1em; margin-left e margin-right:0;*/
+}
+
+.habilidades [colspan]{
+	font-style:italic;
+	vertical-align:middle;
+	text-align:center;
+}
